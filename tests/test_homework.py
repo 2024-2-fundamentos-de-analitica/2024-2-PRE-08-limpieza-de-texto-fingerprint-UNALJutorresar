@@ -4,7 +4,7 @@ import os
 
 import pandas as pd  # type: ignore
 
-from _solution import clean_data
+from homework import clean_data
 
 
 def test_homework():
@@ -12,7 +12,7 @@ def test_homework():
 
     clean_data.main(
         "files/input/input.txt",
-        "files/output/output.txt",
+        "files/output.txt",
     )
 
     if not os.path.exists("files/output/test.csv"):
